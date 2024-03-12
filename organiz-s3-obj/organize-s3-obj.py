@@ -7,7 +7,7 @@ todays_date = today.strftime("%d-%m-%Y")
 
 s3_client = boto3.client('s3')
 
-bucket_name = "bruno-org-s3"
+bucket_name = "<insert_bucket_name>"
 
 list_objects_response = s3_client.list_objects_v2(Bucket=bucket_name)
 
